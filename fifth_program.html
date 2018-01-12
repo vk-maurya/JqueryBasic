@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		This page will apply class by using JQuery
+	</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+	<style type="text/css">
+			.first{
+				color:brown;
+				background-color: grey:;
+				font-size: 30px;
+
+			}
+			.second{
+
+				border: 2px solid green;
+				color:red;
+
+			}
+
+
+	</style>
+
+</head>
+<body>
+
+<p id="first_id"> Hello World</p>
+
+<p id="second_id"> This will make anthor changes</p>
+
+
+
+
+<script type="text/javascript">
+	
+
+	// add Class Herer
+		$(document).ready(function(){
+
+				$("#first_id").click(function(){
+
+					$(this).addClass("first");
+				});
+
+
+		});
+
+// remove class Herer
+		$(document).ready(function(){
+
+				$("#first_id").dblclick(function(){
+
+					$(this).removeClass("first");
+
+				});
+
+		});
+
+
+// it will add and remove by hovering or we can also use click button instase of hover
+
+		$(document).ready(function(){
+
+			$("#second_id").hover(function(){
+
+				$(this).toggleClass("second");
+			});
+
+		});
+
+
+
+
+
+</script>
+
+</body>
+</html>

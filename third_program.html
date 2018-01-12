@@ -1,0 +1,66 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+        <script type="text/javascript" src="jquery.js"></script>
+   </head>
+	
+   <body>
+      <div>
+         <p class="capital">This is a paragraph. you can capital me by clicking</p>
+
+         <p id="color">This is second paragraph.</p>
+         <p id="background">This is third paragraph.</p>
+
+         <p id="all">don't touch me</p>
+      </div>
+      
+      
+      <script>
+          
+          $(document).ready(function(){
+              
+             $('.capital').click(function(){
+                
+              document.write($(this).text().toUpperCase());
+                
+                 
+             });
+              
+          });
+          
+
+          $(document).ready(function(){
+
+              $("#color").click(function(){
+
+                $(this).css("color", "red");
+              });
+
+          });
+
+          $(document).ready(function(){
+
+              $("#background").click(function(){
+
+                $(this).css("background-color", "red");
+              });
+
+          });
+
+           $(document).ready(function(){
+
+              $("#all").click(function(){
+
+               $("*").css("background-color", "yellow");
+              });
+
+          });
+
+
+
+
+          
+      </script>
+      
+   </body>
+</html>

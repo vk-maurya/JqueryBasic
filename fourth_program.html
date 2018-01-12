@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This will use for Attr,Text,var etc</title>
+<script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+		<h2>Here we printing what we put inside</h2>
+
+	<p title="name is vijay"> This sample paragraph</p>
+
+	<p id="print"></p>
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+
+			var variable=$("p").attr("title");
+
+			$("#print").text(variable);
+
+
+		});
+
+
+	</script>
+
+</body>
+</html>

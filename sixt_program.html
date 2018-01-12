@@ -1,0 +1,50 @@
+<html>
+   <head>
+      <title>The Selecter Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+   
+      <script type = "text/javascript" language="javascript">
+        // this wll change text from second to first paragraph
+            $(document).ready(function(){
+
+               $("#second_id").click(function(){
+                     var first=$("#first_id").text();
+
+                     $("#second_id").html(first);
+
+               });
+            });
+
+// This will capitalize the first Paragraph
+
+            $(document).ready(function(){
+               $("#first_id").click(function(){
+
+                  var first=$("#first_id").text();
+
+                  $("#first_id").html(first.toUpperCase());
+
+               });
+
+            });
+
+
+
+      </script>
+		
+      <style>
+         .red { color:red; }
+         .green { color:green; }
+      </style>
+   </head>
+	
+   <body>
+      
+      <p class="first_class" id="first_id"> This is First Paragraph</p>
+      <p class="second_class" id="second_id"> This is Second Paragraph</p>
+
+
+   </body>
+</html>
